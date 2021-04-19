@@ -1,0 +1,35 @@
+{
+  "name": "compado-exercise-api",
+  "version": "1.0.0",
+  "description": "ebay sandbox api forwarder",
+  "main": "index.js",
+  "live": "nodemon index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js",
+    "development": "nodemon -x npm start",
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tugi93/compado-exercise-api.git"
+  },
+  "author": "tugi93",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tugi93/compado-exercise-api/issues"
+  },
+  "homepage": "https://github.com/tugi93/compado-exercise-api#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.0"
+  }
+}
