@@ -21,6 +21,10 @@
     "url": "https://github.com/tugi93/compado-exercise-api/issues"
   },
   "homepage": "https://github.com/tugi93/compado-exercise-api#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "rimraf": "^2.6.3"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
